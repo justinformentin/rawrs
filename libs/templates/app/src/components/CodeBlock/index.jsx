@@ -5,7 +5,7 @@ background-color: #22292f;
 border-radius: 0.25rem;
 color:#fff;
 padding: 1rem;
-width:100%;
+width:96%;
 `;
 
 export default CodeBlock;
