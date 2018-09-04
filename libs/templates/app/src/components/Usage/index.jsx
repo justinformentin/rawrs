@@ -54,7 +54,7 @@ class Home extends Component {
               </tr> 
               <tr>
                 <td>-f, --functional</td>
-                <td>Creates a functional rather than class based component</td>
+                <td>Creates a functional rather than the default class based component</td>
               </tr>
               <tr> 
                 <td>-r, --redux</td>
