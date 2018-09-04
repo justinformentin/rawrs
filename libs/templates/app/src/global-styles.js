@@ -43,6 +43,15 @@ injectGlobal`
       display:flex;
   }
 
+  table {
+    border: 3px solid #666666;
+    border-collapse: collapse;
+  }
+
+  td, th {
+    border: 1px solid #999999;
+  }
+
   p,
   label {
     line-height: 1.5em;
