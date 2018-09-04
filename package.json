@@ -1,0 +1,32 @@
+{
+  "name": "rawrs",
+  "version": "0.0.8",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/justinformentin/rawrs.git"
+  },
+  "description": "React App With Routing and Styled Components",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "create-react-app",
+    "react",
+    "generator",
+    "component"
+  ],
+  "author": "Justin Formentin",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "commander": "^2.17.1",
+    "execa": "^0.10.0",
+    "handlebars": "^4.0.11",
+    "inquirer": "^6.1.0",
+    "ncp": "^2.0.0"
+  },
+  "bin": {
+    "rawrs": "./index.js"
+  }
+}
