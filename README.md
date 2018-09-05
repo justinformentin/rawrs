@@ -1,6 +1,12 @@
+<p align="center">
+  <img src="https://github.com/justinformentin/rawrs/blob/master/img/logo.png?raw=true" alt="Rawr's Logo"/>
+</p>
+
 [![npm](https://img.shields.io/npm/v/rawrs.svg)](https://www.npmjs.com/package/rawrs) [![David](https://img.shields.io/david/justinformentin/rawrs.svg)](https://david-dm.org/justinformentin/rawrs)
 
 [View Site](https://rawrs-cli.github.io/)
+
+
 # Rawrs
 
 React App With Routing and Styled-components.
