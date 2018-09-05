@@ -13,7 +13,7 @@ class Home extends Component {
           <br />
           <p>This application is being served by <a href="https://parceljs.org/">ParcelJS</a>, a fast web app bundler that has zero configuration. If you’d like to dive a bit deeper and really learn about all of ParcelJS’s features and function, a good place to start is their <a href="https://parceljs.org/getting_started.html">documentation</a>.</p>
           <br />
-          <p>Rawrs utilizes <a href="https://www.styled-components.com/">Styled Components</a>, <a href="https://github.com/ReactTraining/react-router">React Router</a>, and optionally, <a href="https://redux.js.org/>">Redux</a> Go ahead and open the project in any editor and make changes.</p>
+          <p>Rawrs utilizes <a href="https://www.styled-components.com/">Styled Components</a>, <a href="https://github.com/ReactTraining/react-router">React Router</a>, and optionally, <a href="https://redux.js.org/">Redux</a> Go ahead and open the project in any editor and make changes.</p>
           <br />
           <H1>Using Rawrs</H1>
           <br />
