@@ -16,13 +16,13 @@ class About extends Component {
         <br />
         <H1>What is Rawrs?</H1>
         <br />
-        <p>Rawrs is my attempt to improve the React Ecosystem, especially for new developers. Trying very hard not to “re-invent the wheel”, I’ve scanned github for different boilerplates.</p>
+        <p>Rawrs is an attempt to improve the React ecosystem, especially for new developers.</p>
         <br />
-        <p>First, create-react-app is great, but it doesn’t even have routing. It’s as barebones as you can get while still being a functional react app, and that may not be entirely helpful to beginners who have a working knowledge of React.</p>
+        <p>Create-react-app is great, but it doesn’t even have routing. It’s as barebones as you can get while still being a functional react app, and that may not be entirely helpful to beginners who have a working knowledge of React.</p>
         <br />
-        <p>On the other end of the spectrum, you get scaffolds that throw in the kitcen sink, so many are so heavy. Those boilerplates are great if you really need to build a app that has very specific functionality, but their package.json files are as long as CVS receipts.</p>
+        <p>On the other end of the spectrum, you get boilerplates that throw in the kitcen sink; so many are so heavy. Those boilerplates are great if you really need to build a app that has very specific functionality, but their package.json files are as long as CVS receipts.</p>
         <br />
-        <p>I wanted to create a boilerplate that had just enough to get you going, and then you can add whatever you need later as it comes up. Which is a philosophy as true in life as it is in programming; don’t add stuff before it’s absolutely necessary.</p>
+        <p>Rawrs has just enough to get you going, and then you can add whatever you need later as it comes up. And that is a philosophy as true in life as it is in programming; don’t add stuff before it’s absolutely necessary.</p>
       </TextBlock>
     );
   }
