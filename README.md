@@ -1,4 +1,5 @@
-[![npm](https://img.shields.io/npm/v/rawrs.svg)](https://www.npmjs.com/package/rawrs)
+[![npm](https://img.shields.io/npm/v/rawrs.svg)](https://www.npmjs.com/package/rawrs) [![David](https://img.shields.io/david/justinformentin/rawrs.svg)](https://david-dm.org/justinformentin/rawrs)
+
 
 # Rawrs
 
