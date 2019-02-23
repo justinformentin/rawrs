@@ -3,9 +3,9 @@ import styled from 'styled-components';
 const CodeBlock = styled.div`
   background-color: #22292f;
   border-radius: 0.25rem;
-  color:#fff;
+  color: #fff;
   padding: 1rem;
-  width:96%;
+  width: 96%;
 `;
 
 export default CodeBlock;

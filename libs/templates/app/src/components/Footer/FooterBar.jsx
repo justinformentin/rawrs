@@ -5,13 +5,13 @@ const FooterBar = styled.div`
   background: rgb(47,58,153);
   background: linear-gradient(315deg, rgba(47,58,153,1) 34%, rgba(2,118,214,1) 100%);
   padding: 2rem 0 .5rem 0;
-  margin:0;
+  margin: 0;
   text-align: right;
   position: relative;
   bottom: 0;
   color: #e3fcec;
-  width:100%;
-  height:3vh;
+  width: 100%;
+  height: 3vh;
 `;
 
 export default FooterBar;

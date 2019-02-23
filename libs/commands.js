@@ -14,7 +14,7 @@ const destroy = async (name, cmd) => {
     name: 'deleteComponent',
     message: chalk.red('Are you ABSOLUTELY sure you want to delete this component file?')
   });
-  
+
   if(name.substr(-3) === '.js') {
     name = name.substring(0, name.length - 3);
   }
@@ -26,13 +26,13 @@ const destroy = async (name, cmd) => {
       errors.destroyFile(error);
       return;
     }
-    
+
   }
 };
 
 const generate = async (type, name, cmd) => {
   const args = utils.cleanArgs(cmd);
-  
+
   if (!name) {
     // support "rawrs g MyComponent"
     name = type;
@@ -46,7 +46,7 @@ const generate = async (type, name, cmd) => {
   if(name.substr(-3) === '.jsx') {
     name = name.substring(0, name.length - 3);
   }
-  
+
   let templateFile = utils.resolveTemplateFile(type, args);
 
   fs.readFile(`${__dirname}/templates/${templateFile}`, 'utf8', (error, data) => {
@@ -54,7 +54,7 @@ const generate = async (type, name, cmd) => {
       log.danger('Could not read template file');
       return;
     }
-    
+
     let template = handlebars.compile(data);
     const resourceNameArray = name.split('/');
     if (args.imports) {
@@ -68,12 +68,12 @@ const generate = async (type, name, cmd) => {
     if (args.content) {
       args.content = args.content.split("\\n");
     }
-    
+
     args.resourceName = resourceNameArray.pop();
     let finishedTemplate = template(args);
-    
+
     const writeOptions = { encoding: 'utf8', flag: 'wx' };
-    
+
     fs.writeFile(`${process.cwd()}/${name}.js`, finishedTemplate, writeOptions, (error) => {
       if(error === null) {
         log.success(`Your ${type} ${name} successfully created`);
@@ -92,7 +92,7 @@ const rawrs = (cmd) => {
 
 const create = async function(name, cmd) {
   log.rawrs('Creating...');
-  
+
   try {
     const { stdout } = execa.shellSync('parcel --version');
   }
@@ -100,17 +100,17 @@ const create = async function(name, cmd) {
     if (error.code === 127) {
       utils.handleParcel();
       return;
-    } 
+    }
   }
 
   if (name === undefined) {
-    
+
     let rawAnswers = await inquirer.prompt({
       type: 'confirm',
       name: 'rawproject',
       message: chalk.yellow('You have not entered any project name, so the project will be initialized in the current directory.')
     });
-    
+
     if (!rawAnswers.rawproject) {
       log.rawrs('Closing now.');
       return;
@@ -140,7 +140,7 @@ const create = async function(name, cmd) {
     if (args.redux) {
       log.rawrs('saving redux files');
       dependencies.push('redux', 'react-redux');
-      ncp(`${__dirname}/src/templates/redux`, `${process.cwd()}/redux`, (error) => {
+      ncp(`${__dirname}/templates/redux`, `${process.cwd()}/src/redux`, (error) => {
         if (error) {
           console.error(error);
         }
@@ -180,12 +180,12 @@ const create = async function(name, cmd) {
         log.danger('Could not read template file');
         return;
       }
-      
+
       let template = handlebars.compile(data);
       let finishedTemplate = template(args);
-    
+
       const writeOptions = { encoding: 'utf8', flag: 'wx' };
-      
+
       fs.writeFile(`${process.cwd()}/src/index.js`, finishedTemplate, writeOptions, (error) => {
         if(error === null) {
           log.success(`Saved index.html successfully. That's the last step.\n\n`);
@@ -198,7 +198,7 @@ const create = async function(name, cmd) {
 
   });
 
-  
+
 }
 
 module.exports = { rawrs, generate, create, destroy };

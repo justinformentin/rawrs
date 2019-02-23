@@ -6,7 +6,7 @@ import registerServiceWorker from './registerServiceWorker';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 
-import reducers from './redux/reducers';
+import rootReducer from './redux/rootReducer';
 {{/if}}
 import 'babel-polyfill';
 
@@ -16,7 +16,7 @@ import './global-styles';
 
 ReactDOM.render(
 {{#if redux}}
-<Provider store={createStore(reducers)}>
+<Provider store={createStore(rootReducer)}>
   <BrowserRouter>
     <App />
   </BrowserRouter>
